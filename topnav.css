@@ -1,0 +1,94 @@
+html * {
+    font-family: 'Lucida Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    font-family: "Lucida Console";
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav img {
+    color:rgb(206, 209, 216);
+    position:absolute;
+    right:10px;
+    top: 10px;   
+}
+
+.topnav ul {
+    overflow: hidden;
+    font-size: 0;  
+}
+.topnav li {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+}
+.topnav a {
+    font-family: "Lucida Console";
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 17px;
+    color:lightgrey;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgb(0, 255, 170);
+    color:darkslategrey !important;
+}
+.topnav a:hover {
+    background-color:darkslategray;
+    display: block;
+    color:lightgray !important;  
+}
+.dropdown {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+.dropdown-content {
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+    position: relative;
+  }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav ul {
+        display: none;
+    }
+
+
+    .dropbtn i{
+        font-size:48px;
+        margin-left: 5%;
+        text-align: center;
+        color: lightgray;
+    }
+
+    .dropdown {
+        display: inline-block;
+        padding-top: 0px;
+        padding-bottom:0px;
+      }
+
+    .dropdown a {
+        color: lightgray;
+      }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+  }
