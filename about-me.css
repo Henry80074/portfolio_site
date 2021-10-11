@@ -1,0 +1,29 @@
+.about-me {
+    display: flex;
+}
+.about-me-text {
+    margin-right: 0%;
+}
+.about-me-content {
+    margin-right: 12.5%;
+}
+.profile-picture-container img {
+    line-height: 200px;
+    width: -webkit-fill-available;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.profile-picture-container {
+    margin-top: 8%;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid lightgrey;
+}
+.about-me-text {
+    width: 55%;
+}
+
+

@@ -5,8 +5,10 @@
     <meta name="author" content="Henry Booth">
     <link rel="stylesheet" href="topnav.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about-me.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <header>
@@ -29,24 +31,31 @@
             </div>
         </div>
     </div>
-</header>
-<body class="main">
-    <div class="col-md-8">
-        <div class="text">
-            <p class="my-description">Hi my name is</p>
-            <h1>Henry Booth</h1>
-            <p class="my-description">I'm currently enrolled on the MSc Computing Conversion course at Cardiff University</p>
+    <body class="main">
+        <div col-md-8>
+        <div class="about-me">
+            <div class="about-me-text col-md-8">
+                <div class="about-me-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="about-me-content">
+                    <p>About me content, This is some text about me, 
+                        this is some more, this is some more, this is some more</p>
+                </div>
+            </div>
+            <div class="profile-picture-container">
+                <img src="static/avatar.jfif" alt="profile-picture">
+            </div>
+            
+        </div>
+        <div class="go-to-buttons">
+            <container class="forward-links">
+                <button class="contact">
+                    <a href="#">View my C.V ></a>
+                </button>
+            </container>
         </div>
     </div>
-    <div class="go-to-buttons">
-        <container class="forward-links">
-            <button class="contact">
-                <a href="#">Get in touch ></a>
-            </button>
-            <button class="contact">
-                <a href="#">View my work ></a>
-            </button>
-        </container>
-    </div>
-    
-</body>
+   
+    </body>
+</header>
