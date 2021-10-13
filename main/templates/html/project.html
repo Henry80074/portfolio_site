@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "html/home.html" %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="project page">
+    <meta name="author" content="Henry Booth">
+    <link rel="stylesheet" href="{% static 'css/topnav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+      <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block content %}
+<body class="main">
+    <div class="col-md-8">
+        <div class="project-container">
+            <h1>{{project.name}}</h1>
+            <div class="img-container">
+                <img src="#" alt="project_img">
+            </div>
+            <div class="text-container">
+                <p class="project-description">Project 1 description</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="portfolio page">
+    <meta name="author" content="Henry Booth">
+    <link rel="stylesheet" href="{% static 'css/topnav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block content %}
+<header>
+    <div class="topnav">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about-me/">About Me</a></li>
+            <li><a class="active" href="/portfolio/">Portfolio</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-caret-down" style="margin-left: 10px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="active" href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body class="main">
+    <div class="col-md-4">
+        <div class="portfolio-text">
+            <h1>My Portfolio</h1>
+            <p>See a selection of my work below</p>
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="card-space">
+        {% for project in portfolio %}
+        <div class="card">
+            <div class="card-header"> 
+                <a class="project_link" href="/portfolio/{{project.id}}">{{project.name}}</a>
+            </div>
+            <div class="img-container">
+                <img class="card-img" src="#" alt="project_img">
+            </div>
+            <div class="text-container">
+                <p class="project-description">Project 1 description</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+    </div>
+</body>
+
+{% endblock %}

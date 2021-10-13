@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="about page">
+    <meta name="author" content="Henry Booth">
+    <link rel="stylesheet" href="{% static 'css/topnav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about-me.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<header>
+    <div class="topnav">
+        <ul>
+            <li><a href="/home/">Home</a></li>
+            <li><a class="active" href="/about-me/">About Me</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-caret-down" style="margin-left: 10px;"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="active" href="#">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+    <body class="main">
+        <div col-md-8>
+        <div class="about-me">
+            <div class="about-me-text col-md-8">
+                <div class="about-me-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="about-me-content">
+                    <p>About me content, This is some text about me, 
+                        this is some more, this is some more, this is some more</p>
+                </div>
+            </div>
+            <div class="profile-picture-container">
+                <img src="../static/avatar.jfif" alt="profile-picture">
+            </div>
+            
+        </div>
+        <div class="go-to-buttons">
+            <container class="forward-links">
+                <button class="contact">
+                    <a href="#">View my C.V ></a>
+                </button>
+            </container>
+        </div>
+    </div>
+   
+    </body>
+</header>

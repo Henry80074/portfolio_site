@@ -1,0 +1,57 @@
+.form-container {
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom: 10%;
+    background-color: lightgrey;
+    padding: 5% 10%;
+    border-radius: 10px;
+}
+label {
+    font-family: 'Lucida Console';
+    color: darkslategray;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0px;
+    display: inline-block;
+    border: 1px solid darkslategray;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+  textarea {
+    width: 100%;
+    min-height: 100px;
+}
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: rgb(0, 255, 170);
+    color: darkslategray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 255, 170);
+    box-shadow:0 0 10px 0 rgb(0, 255, 170);
+  }
+  
+  input[type=submit]:hover {
+    color: rgb(0, 255, 170);
+    transition: 0.5s;
+    background-color: darkslategray;
+    border: 2px solid darkslategray;
+    box-shadow:0 0 10px 0 darkslategray;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-md-4{
+        margin-left: 0%;
+        margin-right: 0%;
+  } 
+}
+
+ 

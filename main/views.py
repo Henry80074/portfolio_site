@@ -10,9 +10,19 @@ def home(request):
 def about_me(request):
     return render(request, 'html/about-me.html')
 
+
 def portfolio(request):
-    return render(request, 'html/portfolio.html')
+    portfolio_items = PortfolioProject.objects.all()
+    context = {'portfolio': portfolio_items}
+    return render(request, 'html/portfolio.html', context)
 
 
 def contact(request):
     return render(request, 'html/contact.html')
+
+
+def portfolioProjectView(request, id):
+    project = PortfolioProject.objects.get(id=id)
+    context = {'project' : project}
+
+    return render(request, 'html/project.html', context)
